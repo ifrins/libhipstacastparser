@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ifrins.hipstacast.podcastparser</groupId>
+	<artifactId>podcastparser</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Podcast Parser</name>
+	<repositories>
+		<repository>
+			<id>sjl-github</id>
+			<name>steveliles github repo</name>
+			<url>http://steveliles.github.com/repository</url>
+		</repository>
+
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>com.sjl</groupId>
+			<artifactId>dsl4xml</artifactId>
+			<version>0.1.7</version>
+		</dependency>
+	</dependencies>
+</project>
