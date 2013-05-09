@@ -3,11 +3,10 @@ package com.ifrins.hipstacast.parser.models;
 public class PodcastItemEnclosure {
 	public String url;
 	public long length;
-	public ENCLOSURE_MEDIA_TYPE enclosureType;
+	public int enclosureType;
 	
-	public enum ENCLOSURE_MEDIA_TYPE {
-	    AUDIO,VIDEO 
-	}
+	public static final int TYPE_AUDIO = 0;
+	public static final int TYPE_VIDEO = 1;
 	
 	public void setUrl(String url) {
 		this.url = url;
@@ -18,6 +17,6 @@ public class PodcastItemEnclosure {
 	}
 	
 	public void setType(String type) {
-		this.enclosureType = ENCLOSURE_MEDIA_TYPE.AUDIO;
+		this.enclosureType = TYPE_AUDIO;
 	}
 }
