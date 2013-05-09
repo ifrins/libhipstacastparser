@@ -6,6 +6,7 @@ import java.util.List;
 
 public class PodcastChannel {
 	public String title;
+	public String author;
 	public String link;
 	public String description;
 	public PodcastImage image;
@@ -21,6 +22,10 @@ public class PodcastChannel {
 	
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 	
 	public void setPodcastImage(PodcastImage podcast_image) {

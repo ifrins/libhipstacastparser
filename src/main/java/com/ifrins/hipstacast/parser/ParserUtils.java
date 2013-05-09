@@ -19,7 +19,4 @@ public final class ParserUtils {
 		}
 		return (3600 * hours) + (60 * minutes) + seconds;
 	}
-	
-	
-
 }

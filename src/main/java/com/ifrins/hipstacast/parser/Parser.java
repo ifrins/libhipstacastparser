@@ -22,6 +22,7 @@ public class Parser {
 					tag("title"),
 					tag("link"),
 					tag("description"),
+					tag("itunes:author").withPCDataMappedTo("author"),
 					tag("itunes:image", PodcastImage.class).with(attributes("href")),
 					tag("item", PodcastItem.class).with( 
 						tag("title"),
