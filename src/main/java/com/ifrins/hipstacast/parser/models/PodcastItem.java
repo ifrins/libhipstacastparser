@@ -5,12 +5,12 @@ import java.util.Date;
 import com.ifrins.hipstacast.parser.ParserUtils;
 
 public class PodcastItem {
-	public String title;
+	public String title = "";
 	public String link;
 	public String guid;
 	public Date pubdate;
 	public long duration;
-	public String description;
+	public String description = "";
 	public PodcastItemEnclosure enclosure; 
 	
 	public void setTitle(String title) {

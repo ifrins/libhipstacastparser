@@ -1,5 +1,7 @@
 package com.ifrins.hipstacast.parser.models;
 
+import com.ifrins.hipstacast.parser.ParserUtils;
+
 public class PodcastItemEnclosure {
 	public String url;
 	public long length;
@@ -17,6 +19,6 @@ public class PodcastItemEnclosure {
 	}
 	
 	public void setType(String type) {
-		this.enclosureType = TYPE_AUDIO;
+        this.enclosureType = ParserUtils.getFileContentType(type);
 	}
 }

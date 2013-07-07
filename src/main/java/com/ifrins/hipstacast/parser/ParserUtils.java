@@ -1,5 +1,7 @@
 package com.ifrins.hipstacast.parser;
 
+import com.ifrins.hipstacast.parser.models.PodcastItemEnclosure;
+
 public final class ParserUtils {
 	
 	public static final int convertDurationToSeconds(String duration) {
@@ -19,4 +21,12 @@ public final class ParserUtils {
 		}
 		return (3600 * hours) + (60 * minutes) + seconds;
 	}
+
+    public static final int getFileContentType(String contentType) {
+        if (contentType.startsWith("video")) {
+            return PodcastItemEnclosure.TYPE_VIDEO;
+        } else {
+            return PodcastItemEnclosure.TYPE_AUDIO;
+        }
+    }
 }
